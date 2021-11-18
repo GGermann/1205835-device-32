@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Device-интернет магазин электронных гаджетов</h1>
+    <img class="logo" src="#" alt="логотип device" />
+    <form class="search" action="#" method="post">
+      <input class="site-search" type="#" name="site-search-active" placeholder="Поиск по сайту">
+      <input class="site-search-button" type="submit" value="найти">
+    </form>
+    <nav class="navigation-customer">
+      <ul class="customer-list">
+        <li class="customer-item">
+          <a href="#" class="customer-link">
+            <svg></svg>
+            <p class="customer-text">Войти</p>
+          </a>
+        </li>
+        <li class="customer-navigation-item">
+          <a href="#" class="customer-navigation-link">
+            <svg></svg>
+            <p class="customer-text">Сравнить</p>
+          </a>
+        </li>
+        <li class="customer-navigation-item">
+          <a href="#" class="customer-navigation-link">
+            <span class="cart-number">2</span>
+            <svg></svg>
+            <p class="customer-text">Корзина</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-navigation">
+      <div class="goods">
+        <p class="goods-main">Каталог товаров</p>
+        <a class="submenu-plus-minus">
+          <span class="visually-hidden">Увидеть список каталога товаров</span>
+        </a>
+        <div class="catalog-submenu">
+          <ul class="submene-list">
+            <li class="submenu-item">
+              <a class="product-name" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="submenu-item">
+              <a class="product-name" href="#">Моноподы для cелфи</a>
+            </li>
+            <li class="submenu-item">
+              <a class="product-name" href="#">Экшн-камеры</a>
+            </li>
+          </ul>
+          <ul class="submene-list">
+            <li class="submenu-item">
+              <a class="product-name" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="submenu-item">
+              <a class="product-name" href="#">Умные часы</a>
+            </li>
+          </ul>
+          <ul class="submene-list">
+            <li class="submenu-item">
+              <a class="product-name" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="header-navigation-list">
+        <li class="header-navigation-item">
+          <a href="#" class="header-navigation-link">Доставка</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="#" class="header-navigation-link">Гарантия</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="#" class="header-navigation-link header-navigation-contact">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main-index main-container">
+    <section class="slide-one">
+      <h2 class="visually-hidden">Описание квадрокоптера</h2>
+      <div class="number-slide">
+        <span class="visually-hidden">Номер слайда</span>
+      </div>
+      <div class="product-slider">
+        <img class="products-site" src="#" alt="Фото квадрокоптера">
+        <div class="product-description">
+          <h3 class="product-slogan">Порхает как бабочка,<br> жалит как пчела!</h3>
+          <p class="full-product-description">Этот обычный, на первый взгляд, квадрокоптер оснащён<br> мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="more-details" href="#" >Подробнее</a>
+          <ul class="product-characteristics-list">
+            <li class="product-characteristics-item">
+              <p class="main-characteristic">800 м</p>
+              <p class="description-characteristic">Дальность полета</p>
+            </li>
+            <li class="product-characteristics-item">
+              <p class="main-characteristic">50 м</p>
+              <p class="description-characteristic">Радиус поражения</p>
+            </li>
+          </ul>
+          <div class="slider-buttons">
+            <button class="slider-button-one current" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-button-two" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-button-three" type="button" aria-label="Третий слайд"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
 </html>
