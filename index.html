@@ -13,13 +13,15 @@
       <input class="site-search-button" type="submit" value="найти">
     </form>
     <nav class="navigation-customer">
-      <ul class="customer-list">
-        <li class="customer-item">
-          <a href="#" class="customer-link">
+      <ul class="user-list">
+        <li class="user-item">
+          <a href="#" class="user-link">
             <svg></svg>
-            <p class="customer-text">Войти</p>
+            <p class="user-text">Войти</p>
           </a>
         </li>
+      </ul>
+      <ul class="customer-list">
         <li class="customer-navigation-item">
           <a href="#" class="customer-navigation-link">
             <svg></svg>
@@ -32,6 +34,32 @@
             <svg></svg>
             <p class="customer-text">Корзина</p>
           </a>
+          <div class="popup">
+            <div class="popup-wrapper">
+              <h2 class="visually-hidden">Корзина</h2>
+              <ul class="header-popup-list">
+                <li class="header-popup-item">
+                  <div class="list-product-one" tabindex="1">
+                    <img class="popup-foto" src="#" width="41" height="43" alt="Фото любительской селфи-палки">
+                    <p class="popup-name-product">Любительская селфи-палка</p>
+                  </div>
+                  <button class="popup-basket" type="submit" aria-label="Закрыть"><svg class="close-icon" aria-hidden="true" role="img" width="41" height="43" viewBox="0 0 41 43"></svg></button>
+                </li>
+                <li class="header-popup-item">
+                  <div class="list-product-one" tabindex="1">
+                    <img class="popup-foto" src="#" width="41" height="43" alt="Фото профессиональной селфи-палка">
+                    <p class="popup-name-product">Профессиональная селфи-палка</p>
+                  </div>
+                  <button class="popup-basket" type="submit" aria-label="Закрыть"><svg class="close-icon" aria-hidden="true" role="img" width="41" height="43" viewBox="0 0 41 43"></svg></button>
+                </li>
+              </ul>
+              <div class="basket-amount">
+                <p class="basket-amount-title">Товаров: 2</p>
+                <p class="basket-amount-title">Сумма: 2000 ₽</p>
+              </div>
+              <a class="popap-button" href="#">Открыть корзину</a>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
@@ -88,7 +116,15 @@
         <div class="number-slide-one">
           <span class="visually-hidden">Номер слайда</span>
         </div>
+        <div class="slide-foto">
+        <button class="slide-button slide-previous-page" type="button">
+          <span class="visually-hidden">Предыдущая страница</span>
+        </button>
         <img class="products-site" width="560" height="560" src="#" alt="Фото квадрокоптера">
+        <button class="slide-button slide-next-page" type="button">
+          <span class="visually-hidden">Следующая страница</span>
+        </button>
+        </div>
         <div class="product-description">
           <h3 class="product-slogan">Порхает как бабочка,<br> жалит как пчела!</h3>
           <p class="full-product-description">Этот обычный, на первый взгляд, квадрокоптер оснащён<br> мощным лазером,
@@ -110,7 +146,15 @@
         <div class="number-slide-two">
           <span class="visually-hidden">Номер слайда</span>
         </div>
+        <div class="slide-foto">
+          <button class="slide-button slide-previous-page" type="button">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </button>
         <img class="products-site" width="560" height="560" src="#" alt="Фото фитнес браслета">
+        <button class="slide-button slide-next-page" type="button">
+          <span class="visually-hidden">Следующая страница</span>
+        </button>
+        </div>
         <div class="product-description">
           <h3 class="product-slogan">Худеем <br> правильно!</h3>
           <p class="full-product-description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br> не пропускать
@@ -128,7 +172,15 @@
         <div class="number-slide-three">
           <span class="visually-hidden">Номер слайда</span>
         </div>
+        <div class="slide-foto">
+          <button class="slide-button slide-previous-page" type="button">
+            <span class="visually-hidden">Предыдущая страница</span>
+          </button>
         <img class="products-site" width="560" height="560" src="#" alt="Фото самой длинной селфи палки">
+        <button class="slide-button slide-next-page" type="button">
+          <span class="visually-hidden">Следующая страница</span>
+        </button>
+        </div>
         <div class="product-description">
           <h3 class="product-slogan">Делай селфи, <br> как Бен Стиллер! </h3>
           <p class="full-product-description">Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь

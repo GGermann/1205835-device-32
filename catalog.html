@@ -13,13 +13,21 @@
       <input class="site-search-button" type="submit" value="найти">
     </form>
     <nav class="navigation-customer">
+        <ul class="user-list">
+          <li class="user-item">
+            <a href="#" class="user-link">
+              <svg></svg>
+              <p class="user-text">Коля Петухов</p>
+            </a>
+          </li>
+          <li class="user-item">
+            <a href="#" class="user-link">
+              <svg></svg>
+              <p class="user-text user-text-active">Выйти</p>
+            </a>
+          </li>
+        </ul>
       <ul class="customer-list">
-        <li class="customer-item">
-          <a href="#" class="customer-link">
-            <svg></svg>
-            <p class="customer-text">Войти</p>
-          </a>
-        </li>
         <li class="customer-navigation-item">
           <a href="#" class="customer-navigation-link">
             <svg></svg>
@@ -32,6 +40,32 @@
             <svg></svg>
             <p class="customer-text">Корзина</p>
           </a>
+          <div class="popup">
+            <div class="popup-wrapper">
+              <h2 class="visually-hidden">Корзина</h2>
+              <ul class="header-popup-list">
+                <li class="header-popup-item">
+                  <div class="list-product-one" tabindex="1">
+                    <img class="popup-foto" src="#" width="41" height="43" alt="Фото любительской селфи-палки">
+                    <p class="popup-name-product">Любительская селфи-палка</p>
+                  </div>
+                  <button class="popup-basket" type="submit" aria-label="Закрыть"><svg class="close-icon" aria-hidden="true" role="img" width="41" height="43" viewBox="0 0 41 43"></svg></button>
+                </li>
+                <li class="header-popup-item">
+                  <div class="list-product-one" tabindex="1">
+                    <img class="popup-foto" src="#" width="41" height="43" alt="Фото профессиональной селфи-палка">
+                    <p class="popup-name-product">Профессиональная селфи-палка</p>
+                  </div>
+                  <button class="popup-basket" type="submit" aria-label="Закрыть"><svg class="close-icon" aria-hidden="true" role="img" width="41" height="43" viewBox="0 0 41 43"></svg></button>
+                </li>
+              </ul>
+              <div class="basket-amount">
+                <p class="basket-amount-title">Товаров: 2</p>
+                <p class="basket-amount-title">Сумма: 2000 ₽</p>
+              </div>
+              <a class="popap-button" href="#">Открыть корзину</a>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
@@ -285,9 +319,7 @@
     </section>
     <section class="pagination">
       <h2 class="visually-hidden">Пагинация</h2>
-      <button class="pagination-button pagination-previous-page" type="button">
-        <span class="visually-hidden">Предыдущая страница</span>
-      </button>
+      <button class="pagination-button pagination-previous-page" type="button">Назад</button>
       <ul class="pagination-list">
         <li class="pagination-item">
           <a class="pagination-link" href="#">1</a>
@@ -305,9 +337,7 @@
           <a class="pagination-link" href="#">15</a>
         </li>
       </ul>
-      <button class="pagination-button pagination-next-page" type="button">
-        <span class="visually-hidden">Следующая страница</span>
-      </button>
+      <button class="pagination-button pagination-next-page" type="button">Вперёд</button>
     </section>
   </main>
   <footer class="main-footer">
