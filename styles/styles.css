@@ -327,8 +327,12 @@ body {
 .main-index {
   background-color: #ffffff;
   color: #000000;
-  margin-left: 140px;
+}
+
+.slide-one {
+  position: relative;
   width: 1160px;
+  margin: 0 auto;
 }
 
 .product-slide {
@@ -338,7 +342,7 @@ body {
 
 .slide-foto {
   position: relative;
-  top: -50px;
+  top: -10px;
 }
 
 .slide-number {
@@ -368,8 +372,9 @@ body {
 }
 
 .slider-buttons {
- position: relative;
-
+  position: absolute;
+  top: 350px;
+  right: 200px;
 }
 
 .full-product-description {
@@ -443,6 +448,11 @@ body {
   background-color: #000000;
 }
 
+.product-categories {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .product-categories-list {
   list-style-type: none;
   display: flex;
@@ -461,24 +471,58 @@ body {
 }
 
 .product-picture-wrapper {
-  /* position: relative; */
+  position: relative;
   background-color: #FFE17F;
   width: 160px;
   min-height: 160px;
+}
+
+.product-categories-item {
   margin-right: 40px;
 }
 
+.product-categories-item:last-child {
+  margin-right: 0;
+}
+
+
 .product-picture {
+  position: absolute;
   display: block;
-  top: 0;
+  top: 43px;
   right: 0;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
   margin: auto;
 }
 
+.advantages-shop {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f0f0;
+  margin-top: 170px;
+  margin-bottom: 90px;
+}
+
 .purchase-terms-list {
+  position: relative;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  top: -18px;
+  padding-left: 140px;
+  padding-right: 140px;
+
+}
+
+.purchase-terms-list::before {
+  content: "";
+  position: absolute;
+  right: 132px;
+  background-color: #000000;
+  top: -80px;
+  width: 7px;
+  height: 319px;
 }
 
 .purchase-terms-item {
@@ -491,6 +535,9 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 45px;
+  background-color: transparent;
+    padding: 9px 120px 11px 1px;
 }
 
 .purchase-terms-active {
@@ -503,6 +550,26 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #FFE17F;
+  background-color: #000000;
+  padding: 9px 120px 11px 1px;
+}
+
+.tab-one {
+  width: 700px;
+  position: relative;
+  top: -80px;
+}
+
+.tab-one::after {
+  content: "";
+  background-image: url("/img/delivery-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 35px;
+  left: 523px;
+  width: 160px;
+  height: 200px;
 }
 
 .name-tab {
@@ -533,6 +600,26 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  padding: 37px 318px 43px 318px;
+  background-color: #f0f0f0;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.index-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about-us {
+  width: 560px;
+}
+
+.contact {
+  width: 560px;
 }
 
 .about-us-title {
