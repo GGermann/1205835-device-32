@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 /* raleway */
 
 @font-face {
@@ -327,6 +331,7 @@ body {
 .main-index {
   background-color: #ffffff;
   color: #000000;
+  flex-grow: 1;
 }
 
 .slide-one {
