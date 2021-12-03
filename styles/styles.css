@@ -397,7 +397,21 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  background-color:#FFE17F;
+  /* background-color:#FFE17F; */
+  position: relative;
+  z-index: 0;
+  padding-left: 40px;
+}
+
+.more-details::before {
+  content: "";
+  border-bottom: 8px solid #ffe17f;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 220px;
+  height: 50%;
+  z-index: -1;
 }
 
 .product-characteristics-list {
@@ -537,7 +551,22 @@ body {
   color: #000000;
   margin-bottom: 45px;
   background-color: transparent;
-    padding: 9px 120px 11px 1px;
+  padding: 9px 120px 11px 1px;
+  position: relative;
+  z-index: 0;
+}
+
+.purchase-terms-item::before {
+  content: "";
+  border-bottom: 8px solid #ffc700;;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 160px;
+  height: 50%;
+  z-index: -1;
+
+
 }
 
 .purchase-terms-active {
@@ -552,6 +581,8 @@ body {
   color: #FFE17F;
   background-color: #000000;
   padding: 9px 120px 11px 1px;
+  position: relative;
+  z-index: auto;
 }
 
 .tab-one {
@@ -590,6 +621,11 @@ body {
   color: #444444;
 }
 
+.delivery {
+  position: relative;
+  margin-bottom: 97px;
+}
+
 .delivery-capabilities {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -604,6 +640,37 @@ body {
   background-color: #f0f0f0;
   margin-left: 140px;
   margin-right: 140px;
+  position: relative;
+}
+
+.delivery-capabilities::before {
+  content: "";
+  background-image: url("/img/car.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 47px;
+  height: 31px;
+  background-color: #ffe17f;
+  padding: 35px;
+}
+
+.info {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: rgba(220, 220, 220);
+  border-radius: 50%;
+  border: none;
+  background-image: url("/img/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 37px;
+  right: 181px;
+  opacity: 0.3;
 }
 
 .index-columns {
@@ -616,10 +683,12 @@ body {
 
 .about-us {
   width: 560px;
+  position: relative;
 }
 
 .contact {
   width: 560px;
+  position: relative;
 }
 
 .about-us-title {
@@ -629,6 +698,19 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin-top: 31px;
+  margin-bottom: 26px;
+}
+
+.about-us-title::before {
+  content: "";
+  position: absolute;
+  right: 132px;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 7px;
 }
 
 .about-us-subtitle {
@@ -638,6 +720,12 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  margin-bottom: 54px;
+}
+
+.transport-company-list {
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .transport-company-item {
@@ -647,9 +735,12 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  margin-bottom: 22px;
 }
 
+
 .button-index-columns {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -660,6 +751,21 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  margin-bottom: 90px;
+  z-index: 0;
+  position: relative;
+  width: 260px;
+}
+
+.button-index-columns::before {
+  content: "";
+  border-bottom: 8px solid #ffc700;
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 259px;
+  height: 50%;
+  z-index: -1;
 }
 
 .contact-title {
@@ -669,6 +775,19 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin-top: 31px;
+  margin-bottom: 26px;
+}
+
+.contact-title::before {
+  content: "";
+  position: absolute;
+  right: 132px;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 7px;
 }
 
 .contact-subtitle {
@@ -687,6 +806,8 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #444444;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .contacts-address-text {
@@ -696,6 +817,16 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  margin: 0;
+}
+
+.container-contacts-phone {
+  display: flex;
+  flex-direction: column;
+  padding-top: 137px;
+  padding-bottom: 67px;
+  justify-content: space-between;
+
 }
 
 .contacts-phone {
@@ -705,12 +836,17 @@ body {
   font-size: 16px;
   line-height: 30px;
   text-align: right;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.contacts-address {
+  margin-bottom: 30px;
 }
 
 .contacts-schedule {
   list-style-type: none;
+  margin-bottom: 67px;
 }
 
 .contacts-schedule-item {
@@ -722,6 +858,51 @@ body {
   color: #444444;
 }
 
+.subscription-index {
+  background-color: #f0f0f0;
+}
+
+.subscription-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.form-subscription-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.form-subscription {
+  padding: 0;
+  color: #000000;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  width: 800px;
+  box-sizing: border-box;
+  margin-bottom: 131px;
+}
+
+.form-yourmail {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  color: #444444;
+  background-color: #f0f0f0;
+  height: 60px;
+  border: 3px solid #0000001a;
+  border-style: none  none solid none;
+}
+
 .subscription-head {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -729,6 +910,9 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  min-width: 560px;
+  margin-top: 75px;
+  margin-bottom: 50px;
 }
 
 .spam-free-subscription {
@@ -738,6 +922,9 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  min-width: 560px;
+  margin-top: 86px;
+  margin-bottom: 50px;
 }
 
 .subscribe-button {
@@ -750,6 +937,8 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  border: 3px solid #0000001a;
+
 }
 
 .mailing {
@@ -759,6 +948,17 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  position: relative;
+}
+
+.mailing::after {
+  position: absolute;
+  top: 7px;
+  left: -36px;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background-image: url("../img/free.svg");
 }
 
 /* Catalog */
@@ -949,6 +1149,17 @@ body {
   background-color:#444444;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.contact-footer {
+  padding-top: 50px;
+}
+
+.logo-footer {
+  margin-bottom: 35px;
 }
 
 .store-address {
@@ -958,12 +1169,40 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+  margin: 0;
+  position: relative;
+}
+
+.store-address::before {
+  content: "";
+  position: absolute;
+  right: 132px;
+  background-color: #ffc700;;
+  top: 124px;
+  left: 0;
+  width: 80px;
+  height: 7px;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 137px;
+  padding-bottom: 61px;
 }
 
 .footer-navigation-list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 63px;
+}
+
+.footer-navigation-item {
+  padding-right: 7px;
 }
 
 
@@ -986,6 +1225,8 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   width: 200px;
+  padding: 0;
+  margin: 0;
 }
 
 .socials-item {
@@ -995,10 +1236,11 @@ body {
   background-color:rgba(255, 255, 255, 0.3);
   cursor: pointer;
   align-self: center;
-  margin-left: auto;
   border: 3px solid transparent;
   box-sizing: border-box;
   outline: none;
+  margin-left: 15px;
+  position: relative;
 }
 
 .socials {
@@ -1008,6 +1250,7 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
+  position: absolute;
 }
 
 
