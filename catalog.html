@@ -9,99 +9,116 @@
   <header class="page-header">
     <h1 class="visually-hidden">Device-интернет магазин электронных гаджетов</h1>
     <img class="logo" width="145" height="36" src="img/device.png" alt="логотип device" />
-    <form class="search" action="#" method="post">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.7 14.3-3.1-3.1A7 7 0 0 0 7 0a7 7 0 0 0-7 7 7 7 0 0 0 11.2 5.6l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1a1 1 0 0 0-.3-.7ZM2 7a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5Z" fill="#000"/></svg>
-      <input class="site-search" type="text" name="site-search-active" placeholder="Поиск по сайту">
-      <input class="site-search-button" type="submit" value="найти">
-    </form>
-    <nav class="navigation-customer">
-      <ul class="user-list">
-        <li class="user-item">
-          <a href="#" class="user-link">
-            <p class="user-text">Коля Петухов</p>
-          </a>
-        </li>
-        <li class="user-item">
-          <a href="#" class="user-link">
-            <p class="user-text-enter">Выйти</p>
-          </a>
-        </li>
-      </ul>
-      <ul class="customer-list">
-        <li class="customer-navigation-item">
-          <a href="#" class="customer-navigation-link">
-            <p class="customer-compare-text">Сравнить</p>
-          </a>
-        </li>
-        <li class="customer-navigation-item">
-          <a href="#" class="customer-navigation-link">
-            <span class="cart-number">2</span>
-            <p class="customer-cart-text">Корзина</p>
-          </a>
-          <div class="popup visually-hidden">
-            <div class="popup-wrapper">
-              <h2 class="visually-hidden">Корзина</h2>
-              <ul class="header-popup-list">
-                <li class="header-popup-item">
-                  <div class="list-product-one" tabindex="1">
-                    <img class="popup-foto" src="img/product-1-small.png" width="41" height="43" alt="Фото любительской селфи-палки">
-                    <p class="popup-name-product">Любительская селфи-палка</p>
-                  </div>
-                  <button class="popup-basket" type="submit" aria-label="Закрыть">
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z" fill="#fff"/></svg></button>
+
+    <div class="searching-site">
+      <form class="search" action="#" method="post">
+
+        <input class="site-search" type="text" name="site-search-active" placeholder="Поиск по сайту">
+        <input class="site-search-button" type="submit" value="найти">
+      </form>
+
+      <div class="main-navigation">
+        <div class="goods">
+          <p class="goods-main">Каталог товаров</p>
+          <button class="submenu-plus-minus">
+            <span class="visually-hidden">Увидеть список каталога товаров</span>
+          </button>
+          <!-- Чтобы открыть дополнительный список товаров нужно убрать catalog-submenu-open  -->
+          <div class="catalog-submenu  catalog-submenu-open">
+            <div class="catolog-submenu-wrapper">
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="product-name" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="header-popup-item">
-                  <div class="list-product-one" tabindex="1">
-                    <img class="popup-foto" src="img/product-2-small.png" width="41" height="43" alt="Фото профессиональной селфи-палка">
-                    <p class="popup-name-product">Профессиональная селфи-палка</p>
-                  </div>
-                  <button class="popup-basket" type="submit" aria-label="Закрыть">
-                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z" fill="#fff"/></svg></button>
+                <li class="submenu-item">
+                  <a class="product-name" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="product-name" href="#">Экшн-камеры</a>
                 </li>
               </ul>
-              <div class="basket-amount">
-                <p class="basket-amount-title">Товаров: 2</p>
-                <p class="basket-amount-title">Сумма: 2000 ₽</p>
-              </div>
-              <a class="popap-button" href="#">Открыть корзину</a>
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="product-name" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="product-name" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="product-name" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </li>
-      </ul>
-    </nav>
-    <div class="main-navigation">
-      <div class="goods">
-        <p class="goods-main">Каталог товаров</p>
-        <a class="submenu-plus-minus">
-          <span class="visually-hidden">Увидеть список каталога товаров</span>
-        </a>
-        <div class="catalog-submenu visually-hidden">
-          <ul class="submene-list">
-            <li class="submenu-item">
-              <a class="product-name" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="submenu-item">
-              <a class="product-name" href="#">Моноподы для cелфи</a>
-            </li>
-            <li class="submenu-item">
-              <a class="product-name" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="submene-list">
-            <li class="submenu-item">
-              <a class="product-name" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="submenu-item">
-              <a class="product-name" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="submene-list">
-            <li class="submenu-item">
-              <a class="product-name" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
         </div>
       </div>
+    </div>
+
+    <div class="navigation-site">
+      <nav class="navigation-customer">
+        <ul class="user-list">
+          <li class="user-item">
+            <a href="#" class="user-link">
+              <p class="user-text">Войти</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="customer-list">
+          <li class="customer-navigation-item">
+            <a href="#" class="customer-navigation-link">
+              <p class="customer-compare-text">Сравнить</p>
+            </a>
+          </li>
+          <li class="customer-navigation-item">
+            <a href="#" class="customer-navigation-link">
+              <span class="cart-number">2</span>
+              <p class="customer-cart-text">Корзина</p>
+            </a>
+            <!-- Чтобы открыть корзину нужно убрать класс popup-open -->
+            <div class="popup  popup-ope">
+              <div class="popup-wrapper">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="header-popup-list">
+                  <li class="header-popup-item">
+                    <div class="list-product-one" tabindex="1">
+                      <img class="popup-foto" src="img/product-1-small.png" width="41" height="43"
+                        alt="Фото любительской селфи-палки">
+                      <p class="popup-name-product">Любительская <br> селфи-палка</p>
+                    </div>
+                    <button class="popup-basket" type="submit" aria-label="Закрыть">
+                      <svg class="basket-icon" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"
+                          fill="#fff" />
+                      </svg></button>
+                  </li>
+                  <li class="header-popup-item">
+                    <div class="list-product-one" tabindex="1">
+                      <img class="popup-foto" src="img/product-2-small.png" width="41" height="43"
+                        alt="Фото профессиональной селфи-палка">
+                      <p class="popup-name-product">Профессиональная <br> селфи-палка</p>
+                    </div>
+                    <button class="popup-basket" type="submit" aria-label="Закрыть">
+                      <svg class="basket-icon" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m11 1-1-1-4.5 4.5L1 0 0 1l4.5 4.5L0 10l1 1 4.5-4.5L10 11l1-1-4.5-4.5L11 1Z"
+                          fill="#fff" />
+                      </svg></button>
+                  </li>
+                </ul>
+                <div class="basket-amount">
+                  <p class="basket-amount-title">Товаров: 2</p>
+                  <p class="basket-amount-title">Сумма: 2000 ₽</p>
+                </div>
+                <a class="popap-button" href="#">Открыть корзину</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
       <ul class="header-navigation-list">
         <li class="header-navigation-item">
           <a href="#" class="header-navigation-link">Доставка</a>
@@ -114,6 +131,8 @@
         </li>
       </ul>
     </div>
+
+
   </header>
   <main class="main-container">
     <section class="catalog-inner">
@@ -134,22 +153,18 @@
         </li>
       </ul>
     </section>
+
+
+    <div class="catalog-container">
+    <div class="filters-container">
     <section class="filters">
       <h2 class="sorting-title">Фильтр:</h2>
       <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group catalog-filter-price">
           <legend class="catalog-filter-title">Стоимость</legend>
           <div class="range">
-            <div class="range-wrapper-inputs">
-              <label class="catalog-filter-label filter-label-min" tabindex="1">
-                от <input class="range-input" type="number" value="0" name="min-price" style="width: 86px;">
-              </label>
-              <label class="catalog-filter-label filter-label-max" tabindex="1">
-                до<input class="range-input" type="number" value="5000" name="max-price" style="width: 86px;">
-              </label>
-            </div>
             <div class="range-scale">
-              <div class="range-bar" style="width: 227px;">
+              <div class="range-bar" style="width: 119px;">
                 <button class="range-toggle toggle-min" type="button">
                   <span class="visually-hidden">Изменить минимальную цену.</span>
                 </button>
@@ -157,6 +172,14 @@
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </div>
+            </div>
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label filter-label-min" tabindex="1">
+                от <input class="range-input" type="number" value="0" name="min-price" style="width: 60px;">
+              </label>
+              <label class="catalog-filter-label filter-label-max"  tabindex="1">
+                до<input class="range-input" type="number" value="5000" name="max-price" style="width: 60px;">
+              </label>
             </div>
           </div>
         </fieldset>
@@ -223,9 +246,12 @@
         <button class="button-show" type="submit">Показать</button>
       </form>
     </section>
+  </div>
+
+    <div class="sorting-container">
     <section class="sorting">
       <h2 class="sorting-title">Сортировка:</h2>
-      <div class="sorting-container">
+
         <form class="sorting-type">
           <div class="select">
             <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -239,17 +265,17 @@
         </form>
         <ul class="sort-list">
           <li class="sort-item-down">
-            <a class="arrow" href="#">
+            <a class="arrow" href="#">p
               <span class="visually-hidden">Стрелка вверх</span>
             </a>
           </li>
           <li class="sort-item-up">
-            <a class="arrow arrow-active" href="#">
+            <a class="arrow arrow-active" href="#">p
               <span class="visually-hidden">Стрелка вниз</span>
             </a>
           </li>
         </ul>
-      </div>
+
     </section>
     <section class="cards">
       <ul class="cards-list">
@@ -294,6 +320,11 @@
         <button class="cards-button" type="button">Загрузить еще</button>
       </div>
     </section>
+  </div>
+
+  </div>
+
+
     <section class="pagination">
       <h2 class="visually-hidden">Пагинация</h2>
       <button class="pagination-button pagination-previous-page" type="button">Назад</button>
