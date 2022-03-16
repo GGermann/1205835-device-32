@@ -815,6 +815,13 @@ body {
   background-color: #f0f0f0;
   margin-bottom: 90px;
   min-height: 287px;
+  min-width: 1440px;
+}
+
+.advantages-shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .purchase-terms-list {
@@ -823,7 +830,6 @@ body {
   padding: 0;
   margin: 0;
   top: -21px;
-  padding-left: 140px;
   padding-right: 140px;
 
 }
@@ -887,8 +893,22 @@ body {
 .tab-one {
   width: 700px;
   position: relative;
-  top: -80px;
-  left: -16px;
+  top: -78px;
+
+}
+
+.tab-two {
+  width: 700px;
+  position: relative;
+  top: -78px;
+
+}
+
+.tab-three {
+  width: 700px;
+  position: relative;
+  top: -78px;
+
 }
 
 .tab-one::after {
@@ -897,10 +917,34 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 45px;
-  left: 543px;
-  width: 160px;
-  height: 200px;
+  top: -8px;
+  left: 529px;
+  width: 136px;
+  height: 164px;
+}
+
+.tab-two::after {
+  content: "";
+  background-image: url("/img/warranty-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -8px;
+  left: 529px;
+  width: 171px;
+  height: 195px;
+}
+
+.tab-three::after {
+  content: "";
+  background-image: url("/img/credit-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -8px;
+  left: 529px;
+  width: 156px;
+  height: 188px;
 }
 
 .name-tab {
@@ -929,6 +973,11 @@ body {
   margin-bottom: 97px;
 }
 
+.delivery-terms {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .delivery-capabilities {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -941,8 +990,8 @@ body {
   color: #000000;
   padding: 37px 318px 40px 318px;
   background-color: #f0f0f0;
-  margin-left: 140px;
-  margin-right: 140px;
+  /* margin-left: 140px;
+  margin-right: 140px; */
   position: relative;
 }
 
@@ -1190,7 +1239,7 @@ body {
 .subscription-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: 140px;
   margin-right: 140px;
 }
@@ -1198,7 +1247,7 @@ body {
 .form-subscription-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: 140px;
   margin-right: 140px;
 }
@@ -1308,7 +1357,6 @@ body {
 
 .cards {
   padding: 69px 72px 20px 72px;
-
 }
 
 .cards-list {
@@ -1325,17 +1373,6 @@ body {
   min-height: 468px;
 }
 
-.product-card-image:hover  {
-  opacity: 0.3;
-}
-
-
-/* .product-card-images {
-  box-shadow: inset 0 0 0 3px #af4fff;
-  border: none;
-  color: #af4fff;
-} */
-
 .cards-item .detailed-button {
   display: none;
 }
@@ -1344,12 +1381,26 @@ body {
   display: block;
 }
 
-.cards-item:focus .product-card-title  {
+.cards-item:nth-child(n):active .detailed-button {
   display: none;
-  color: #af4fff;
-  border: solid 3px #af4fff;
-  /* box-shadow: inset 0 0 0 3px #af4fff; */
+  box-shadow: inset 0 0 0 3px #af4fff;
+  color: #824baf;
+}
 
+.cards-item:focus-within .product-card-images {
+  outline: 5px solid #af4fff;
+}
+
+.cards-item:focus-within .product-card-title {
+  color: #af4fff;
+}
+
+.cards-item:focus-within .product-card-subtitle {
+  color: #af4fff;
+}
+
+.product-card-images:hover {
+  opacity: 0.3;
 }
 
 .product-subtitle {
@@ -1777,10 +1828,10 @@ body {
   line-height: 21px;
   text-align: right;
   color: #444444;
+  margin: 0;
 }
 
 .detailed-button {
-
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1790,13 +1841,10 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  position: relative;
-  top: -264px;
-  right: 0;
-  bottom: 0;
-  left: 0px;
+  position: absolute;
+  top: 175px;
+  left: 100px;
   z-index: 1;
-  padding-left: 40px;
   text-decoration: none;
 }
 
@@ -1805,7 +1853,7 @@ body {
   border-bottom: 8px solid #ffe17f;
   position: absolute;
   top: -4px;
-  left: 70px;
+  left: -35px;
   width: 220px;
   height: 50%;
   z-index: -1;
