@@ -22,7 +22,7 @@
       <div class="main-navigation">
         <div class="goods">
           <p class="goods-main">Каталог товаров</p>
-          <button class="submenu-plus-minus">
+          <button class="submenu-plus submenu-mins">
             <span class="visually-hidden">Увидеть список каталога товаров</span>
           </button>
           <!-- Чтобы открыть дополнительный список товаров нужно убрать catalog-submenu-open  -->
@@ -61,25 +61,25 @@
     <div class="navigation-site">
       <nav class="navigation-customer">
         <ul class="user-list">
-          <li class="user-item">
-            <a href="#" class="user-link">
+          <li class="customer-navigation-item">
+            <a class="customer-navigation-link" href="#">
               <p class="user-text">Войти</p>
             </a>
           </li>
         </ul>
         <ul class="customer-list">
           <li class="customer-navigation-item">
-            <a href="#" class="customer-navigation-link">
+            <a class="customer-navigation-link" href="#">
               <p class="customer-compare-text">Сравнить</p>
             </a>
           </li>
           <li class="customer-navigation-item">
-            <a href="#" class="customer-navigation-link">
+            <a class="customer-navigation-link" href="cart.html">
               <span class="cart-number">2</span>
               <p class="customer-cart-text">Корзина</p>
             </a>
             <!-- Чтобы открыть корзину нужно убрать класс popup-open -->
-            <div class="popup  popup-open">
+            <div class="popup  popup-ope">
               <div class="popup-wrapper">
                 <h2 class="visually-hidden">Корзина</h2>
                 <ul class="header-popup-list">
@@ -133,30 +133,17 @@
         </li>
       </ul>
     </div>
-
-
   </header>
   <main class="main-index">
-    <section class="slide-one">
+    <section class="slide">
       <h2 class="visually-hidden">Слайдер товаров</h2>
-      <div class="slide-number">
-        <img class="numbers-slide" src="img/number-one.png" width="200" height="123" alt="Номер слайда">
-      </div>
-      <div class="product-slide product-slide-show">
-        <div class="number-slide-one">
-          <span class="visually-hidden">Номер слайда</span>
+      <!-- Чтобы убрать слайд, добавь класс product-slide-show -->
+      <div class="product-slide">
+        <div class="slide-number">
+          <img class="numbers-slide" src="img/number-one.png" width="200" height="123" alt="Номер слайда"/>
         </div>
         <div class="slide-foto">
-          <img class="products-site" width="560" height="560" src="img/slider-1.png" alt="Фото квадрокоптера">
-          <div class="slider-controls">
-            <button class="slide-button slide-next-page" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slide-button slide-prev" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
-
+          <img class="products-site" width="560" height="560" src="img/slider-1.png" alt="Фото квадрокоптера"/>
         </div>
         <div class="product-description">
           <h3 class="product-slogan">Порхает как бабочка,<br> жалит как пчела!</h3>
@@ -175,23 +162,12 @@
           </ul>
         </div>
       </div>
-      <div class="product-slide visually-hidden">
-        <div class="number-slide-two">
-          <span class="visually-hidden">Номер слайда</span>
-        </div>
+      <div class="product-slide fade">
         <div class="slide-number">
-          <img class="numbers-slide" src="img/number-two.png" width="250" height="135" alt="Номер слайда">
+          <img class="numbers-slide" src="img/number-two.png" width="200" height="123" alt="Номер слайда"/>
         </div>
         <div class="slide-foto">
-          <img class="products-site" width="560" height="560" src="img/slider-2.png" alt="Фото фитнес браслета">
-          <div class="slider-controls">
-            <button class="slide-button slide-next-page" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slide-button slide-prev" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
+          <img class="products-site" width="560" height="560" src="img/slider-2.png" alt="Фото фитнес браслета"/>
         </div>
         <div class="product-description">
           <h3 class="product-slogan">Худеем <br> правильно!</h3>
@@ -206,24 +182,13 @@
           </ul>
         </div>
       </div>
-      <div class="product-slide visually-hidden">
-        <div class="number-slide-three">
-          <span class="visually-hidden">Номер слайда</span>
-        </div>
+      <div class="product-slide fade">
         <div class="slide-number">
-          <img class="numbers-slide" src="img/number-three.png" width="250" height="135" alt="Номер слайда">
+          <img class="numbers-slide" src="img/number-three.png" width="200" height="123" alt="Номер слайда"/>
         </div>
         <div class="slide-foto">
           <img class="products-site" width="560" height="560" src="img/slider-3.png"
-            alt="Фото самой длинной селфи палки">
-          <div class="slider-controls">
-            <button class="slide-button slide-next-page" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slide-button slide-prev" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
+            alt="Фото самой длинной селфи палки"/>
         </div>
         <div class="product-description">
           <h3 class="product-slogan">Делай селфи, <br> как Бен Стиллер! </h3>
@@ -246,11 +211,27 @@
           </ul>
         </div>
       </div>
-      <div class="slider-buttons">
-        <button class="slider-button-one current" type="button" aria-label="Первый слайд"></button>
-        <button class="slider-button-two" type="button" aria-label="Второй слайд"></button>
-        <button class="slider-button-three" type="button" aria-label="Третий слайд"></button>
+      <a class="prev" onclick="setSlide('prev')">&#10094</a>
+      <a class="next" onclick="setSlide('next')">&#10095</a>
+      <div class="dots">
+        <span  class="dot active" onclick="setSlide(0)"></span>
+        <span  class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
       </div>
+
+      <!-- <div class="slider-controls">
+        <button class="slide-button slide-next-page" onclick="plusSlides(-1)" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slide-button slide-prev" onclick="plusSlides(1)" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
+      </div> -->
+      <!-- <div class="slider-buttons">
+        <button  class="slider-button" onclick="currentSlide(1)" type="button" aria-label="Первый слайд"></button>
+        <button  class="slider-button" onclick="currentSlide(2)" type="button" aria-label="Второй слайд"></button>
+        <button class="slider-button" onclick="currentSlide(3)" type="button" aria-label="Третий слайд"></button>
+      </div> -->
     </section>
     <section class="product-categories">
       <h2 class="visually-hidden">Перечень товаров</h2>
@@ -297,30 +278,28 @@
       <h2 class="visually-hidden">Преимущества магазина</h2>
       <div class="advantages-shop-container">
         <ul class="purchase-terms-list">
-          <li class="purchase-terms-item purchase-terms-active">Доставка</li>
-          <li class="purchase-terms-item">Гарантия</li>
-          <li class="purchase-terms-item">Кредит</li>
+          <li class="terms-item-one purchase-terms-active">Доставка</li>
+          <li class="terms-item-two ">Гарантия</li>
+          <li class="terms-item-three">Кредит</li>
         </ul>
         <div class="advantages-tab">
-        <div class="tab-one tab-active">
-          <h3 class="name-tab">Доставка</h3>
-          <p class="tab-description">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно
-            бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <div class="tab-one">
+            <h3 class="name-tab">Доставка</h3>
+            <p class="tab-description">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно
+              бесплатно! Ведь <br> мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="tab-two tab-active">
+            <h3 class="name-tab">Гарантия</h3>
+            <p class="tab-description">Если из-за возгорания купленного у нас товара у вас <br> сгорит дом — не
+              переживайте,
+              мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
+            </div>
+          <div class="tab-three tab-active">
+            <h3 class="name-tab">Кредит</h3>
+            <p class="tab-description">Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас
+              наиболее выгодные <br> условия кредита. Выгодные для банка, разумеется.</p>
+            </div>
         </div>
-        <div class="tab-two visually-hidden">
-          <h3 class="name-tab">Гарантия</h3>
-          <p class="tab-description">Если из-за возгорания купленного у нас товара у вас <br> сгорит дом — не
-            переживайте,
-            мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
-          <img class="description-picture" width="171" height="195" src="img/warranty-1.png" alt="Картинка гарантии">
-        </div>
-        <div class="tab-three visually-hidden">
-          <h3 class="name-tab">Кредит</h3>
-          <p class="tab-description">Залезть в долговую яму стало проще! Кредитные <br> консультанты подберут для вас
-            наиболее выгодные <br> условия кредита. Выгодные для банка, разумеется.</p>
-          <img class="description-picture" width="156" height="188" src="img/credit-1.png" alt="Картинка кредита">
-        </div>
-      </div>
 
       </div>
 
@@ -359,7 +338,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button-index-columns" href="#">Напишите нам</a>
+        <a class="button-index-columns" href="#" id="button-letter">Напишите нам</a>
       </section>
     </div>
     <div class="subscription-index">
@@ -469,8 +448,6 @@
               </div>
             </div>
           </div>
-
-
           <div class="form-label-wrapper">
             <div class="field-group form-arrival-date">
               <label class="form-label" for="arrival-date">Что нужно привезти:</label>
@@ -514,7 +491,8 @@
       </form>
     </div>
   </section>
-
+  <script src="/js/script.js">
+  </script>
 </body>
 
 </html>
