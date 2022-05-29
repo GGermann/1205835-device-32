@@ -20,9 +20,9 @@ let tabTwo = document.querySelector(".tab-two");
 let tabThree = document.querySelector(".tab-three");
 let tabactive = document.querySelector(".tab-active");
 
-let slides = document.getElementsByClassName('product-slide');
-let dots = document.getElementsByClassName('dot');
-let activeSlideNum = 0;
+var slides = document.getElementsByClassName('product-slide');
+var dots = document.getElementsByClassName('dot');
+var activeSlideNum = 0;
 
 function setSlide(slideIndex) {
   for ( let i = 0; i < slides.length; i++){
